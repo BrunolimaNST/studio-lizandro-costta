@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@import "./tokens.css";
+@import "./animations.css";
+@import "./landing.css";
+
+@theme {
+  --font-display: 'Outfit', sans-serif;
+  --font-heading: 'Syne', 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  --color-primary-dark: #090A0C;
+  --color-surface-card: #13151B;
+  --color-brand-orange: #FF6B00;
+  --color-brand-red: #E53935;
+}
+
+/* Personalização da Barra de Scroll */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #ea580c #09090b;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #09090b; /* Fundo escuro (zinc-950) */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ea580c; /* Laranja da marca (orange-600) */
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f97316; /* Laranja mais claro no hover (orange-500) */
+}
